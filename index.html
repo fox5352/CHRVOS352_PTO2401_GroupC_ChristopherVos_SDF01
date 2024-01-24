@@ -34,8 +34,8 @@
     <!-- About Me Section -->
     <section id="aboute-me  ">
         <h2>About me</h2>
+        <!-- image -->
         <img src="/images/cat-codespace.png" alt="a cat mascot">
-        <!-- &#example; used for the parenthesis  -->
         <p>
             Hello! I'm <b>CodeSpace Cat</b>. I'm passionate about web development and design.
             I've been pawing at the first web industry for just one catnap&#40;least than a day in human terms&#41;, 
@@ -56,20 +56,72 @@
         </ul>
     </section>
 
-    <!-- TODO: SECTIONS 2 -->
     <!-- Portfolio Section -->
     <section id="portfolio">
         <h2>Catfolio</h2>
-        <table>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Thumbnail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- row one -->
+                <tr>
+                    <td>Purr-fect Landing page </td>
+                    <td>January 2024</td>
+                    <td>A delightful landing page for a luxury cat condo.</td>
+                    <td>
+                        <img src="/images/1.png" alt="a cat in a luxury condo">
+                    </td>
+                </tr>
+                <!-- row two -->
+                <tr>
+                    <td>Kitty Commerce</td>
+                    <td>February 2024</td>
+                    <td>A online store selling the fanciest catnip store</td>
+                    <td>
+                        <img src="/images/2.png" alt="a stores page image">
+                    </td>
+                </tr>
+                <!-- row three -->
+                <tr>
+                    <td>CatChat Social</td>
+                    <td>June 2024</td>
+                    <td>A social site for cats to meow and hiss!</td>
+                    <td>
+                        <img src="/images/3.png" alt="a chat app with a cat in it">
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">  
+        <h2>Contact ME</h2>
+        <form action="/" method="POST">
+            <!-- users name -->
+            <label for="name">Name:</label>
+            <input id="name" type="text" required><br>
+            <!-- users email -->
+            <label for="email">Email:</label>
+            <input id="email" type="email" required><br>
+            <!-- users message -->
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="2">
+            </textarea><br>
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer  -->
     <footer>
+        <p>&copy; 2024 CodeSpace Cat. All right reserved.</p>
     </footer>
 
 </body>
